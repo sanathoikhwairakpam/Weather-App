@@ -1,0 +1,17 @@
+{
+  "name": "sky-glass-weather",
+  "version": "1.0.0",
+  "description": "A minimalist sky blue glassmorphism weather app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager . SkyGlassWeather --platform=win32 --arch=x64 --overwrite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^27.0.0",
+    "electron-packager": "^17.1.2"
+  }
+}

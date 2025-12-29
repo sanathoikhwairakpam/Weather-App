@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="glass-card">
+            <div class="search-box">
+                <input type="text" id="city-input" placeholder="Enter city name...">
+                <button id="search-btn">🔍</button>
+            </div>
+            
+            <div class="weather-info" id="weather-info">
+                <h1 id="city-name">Loading...</h1>
+                <div class="temp-container">
+                    <span id="temperature">--</span><span class="unit">°C</span>
+                </div>
+                <p id="condition">Waiting for location...</p>
+                
+                <div class="details">
+                    <div class="detail-item">
+                        <span class="label">Wind</span>
+                        <span class="value" id="wind">-- km/h</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Humidity</span>
+                        <span class="value" id="humidity">--%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>
